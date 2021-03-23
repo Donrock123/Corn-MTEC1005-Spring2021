@@ -9,12 +9,13 @@ void setup() {
   Serial.begin(9600);
   pinMode(LED,OUTPUT); 
   pinMode(LED2,OUTPUT);
-  pinMode(LED5,OUTPUT);
+  pinMode(LED3,OUTPUT);
   pinMode(LED4,OUTPUT);
   pinMode(buttonPin,INPUT);
 }
-buttonState = analogRead(buttonPin);
+
 void loop() {
+buttonState = analogRead(buttonPin);
 Serial.printline(buttonState);
 delay(10);
     if(buttonState == HIGH){
@@ -37,4 +38,3 @@ delay(10);
       delay(500);        
     }
   }
-}
