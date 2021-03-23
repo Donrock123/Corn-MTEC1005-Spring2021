@@ -9,7 +9,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(LED,OUTPUT); 
   pinMode(LED2,OUTPUT);
-  pinMode(LED5,OUTPUT);
+  pinMode(LED3,OUTPUT);
   pinMode(LED4,OUTPUT);
   pinMode(buttonPin,INPUT);
 }
